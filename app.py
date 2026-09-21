@@ -113,7 +113,7 @@ if analyze_btn:
         try:
             # Stage 3 Call using official google-genai SDK
             response = client.models.generate_content(
-                model="gemini-2.0-flash",
+                model="gemini-3.1-flash-lite",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
