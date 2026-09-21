@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 st.title("🏠 AI Real Estate Micro-Location & Risk Intelligence Agent")
-st.caption("Advanced Agentic Due-Diligence System powered by Gemini 2.5 Flash")
+st.caption("Advanced Agentic Due-Diligence System powered by Gemini 3.8 Flash")
 
 # API Key Handling
 api_key = st.sidebar.text_input("Enter Google Gemini API Key:", type="password")
@@ -113,7 +113,7 @@ if analyze_btn:
         try:
             # Stage 3 Call using official google-genai SDK
             response = client.models.generate_content(
-                model="gemini-3.6-flash",
+                model="gemini-3.8-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
