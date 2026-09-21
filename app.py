@@ -14,7 +14,7 @@ st.set_page_config(
 )
 
 st.title("🏠 AI Real Estate Micro-Location & Risk Intelligence Agent")
-st.caption("Advanced Agentic Due-Diligence System powered by Gemini 3.8 Flash")
+st.caption("Advanced Agentic Due-Diligence System powered by Gemini 3.1 Flash-lite")
 
 # API Key Handling
 api_key = st.sidebar.text_input("Enter Google Gemini API Key:", type="password")
